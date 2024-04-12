@@ -49,10 +49,3 @@ class ImageSizerTF:
         # Return the width and height as a tuple of integers
         return (int(round(width)), int(round(height)))
     
-NODE_CLASS_MAPPINGS = {
-    "ImageSizerTF": ImageSizerTF
-}
-
-NODE_DISPLAY_NAME_MAPPINGS = {
-    "ImageSizerTF": "Image Sizer TF"
-}
