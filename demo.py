@@ -48,4 +48,3 @@ class ImageSizerTF:
         
         # Return the width and height as a tuple of integers
         return (int(round(width)), int(round(height)))
-    
