@@ -1,5 +1,5 @@
 
-class InputStringTF:
+class OutputStringTF:
     def __init__(self):
         pass
 
@@ -7,10 +7,10 @@ class InputStringTF:
     def INPUT_TYPES(s):
         return {
             "required": {
-                "text": ("STRING",{"multiline": True, "dynamicPrompts": True})
+                "text": ("STRING",{"dynamicPrompts": True}),
             },
             "optional":{
-                "args": ("STRING")
+                "link": ("STRING")
             }
         }
 
@@ -21,5 +21,5 @@ class InputStringTF:
 
     CATEGORY = "TFCustom"
 
-    def run(self, text, args):
-        return (str(text), args)
+    def run(self, text, link):
+        return (str(text), link)
